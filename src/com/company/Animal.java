@@ -21,10 +21,23 @@ public class Animal {
 
         }
     }
+    void takeforwalk() {
+        weight--;
+        System.out.println("thx for walk bro, my weight is now " + weight);
+        if(weight<8) {
+            System.out.println("Your pet is death ");
+        } else {
+            System.out.println("Your pet is live");
+        }
+    }
 
     void feed() {
         weight++;
         System.out.println("thx for food bro, my weight is now " + weight);
-
+        if(weight>250) {
+            System.out.println("Your pet is live ");
+        } else {
+            System.out.println("Your pet is death");
+        }
     }
 }

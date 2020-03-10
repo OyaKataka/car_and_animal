@@ -23,6 +23,10 @@ public class Main {
         me.pet.feed();
         me.pet.feed();
         me.pet.feed();
+me.pet.takeforwalk();
+        me.pet.takeforwalk();
+        me.pet.takeforwalk();
+        me.pet.takeforwalk();
 
         System.out.println(me.pet.name);
 
