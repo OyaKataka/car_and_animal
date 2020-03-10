@@ -10,13 +10,15 @@ public class Main {
         Animal lion = new Animal("lion");
         lion.name = "lion";
 
-        
+
+
         Human me = new Human();
         me.fristname = "Patryk";
         me.lastname = "Borsuk";
         me.pet = lion;
 
 
+        me.pet.feed();
         me.pet.feed();
         me.pet.feed();
         me.pet.feed();
