@@ -5,9 +5,10 @@ import java.io.File;
 public class Animal {
     String name;
     final String species;
-    private Double weight = 30.0;
+    private Double weight;
     File pic;
     static final Double DEFAULT_DOG_WEIGHT = 8.0;
+    static final Double DEFAULT_LION_WEIGHT = 180.0;
 
 
     public Animal(String species) {
@@ -16,7 +17,7 @@ public class Animal {
             this.weight = DEFAULT_DOG_WEIGHT;
         }
         else if (species == "lion"){
-            this.weight =180.0;
+            this.weight =DEFAULT_LION_WEIGHT;
 
         }
     }

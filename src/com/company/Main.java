@@ -7,15 +7,19 @@ public class Main {
         dog.name = "Akita";
 
 
-        Animal lion = new Animal("species");
+        Animal lion = new Animal("lion");
         lion.name = "lion";
 
-        dog.feed();
+        
         Human me = new Human();
         me.fristname = "Patryk";
         me.lastname = "Borsuk";
         me.pet = lion;
 
+
+        me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
         me.pet.feed();
 
         System.out.println(me.pet.name);
