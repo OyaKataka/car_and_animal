@@ -10,12 +10,16 @@ public class Main {
         Animal lion = new Animal("lion");
         lion.name = "lion";
 
-
+        Car gulia = new Car();
+        gulia.model = "Gulia 2018";
+        gulia.producer = "AlfaRomeo";
+        gulia.color = "red";
 
         Human me = new Human();
         me.fristname = "Patryk";
         me.lastname = "Borsuk";
         me.pet = lion;
+        me.auto = gulia;
 
 
         me.pet.feed();

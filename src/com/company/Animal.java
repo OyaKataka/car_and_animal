@@ -15,29 +15,48 @@ public class Animal {
         this.species = species;
         if (species == "dog") {
             this.weight = DEFAULT_DOG_WEIGHT;
-        }
-        else if (species == "lion"){
-            this.weight =DEFAULT_LION_WEIGHT;
+        } else if (species == "lion") {
+            this.weight = DEFAULT_LION_WEIGHT;
 
         }
     }
+
     void takeforwalk() {
         weight--;
         System.out.println("thx for walk bro, my weight is now " + weight);
-        if(weight<8) {
-            System.out.println("Your pet is death ");
+        if (species == "lion") {
+            if (weight < 100) {
+                System.out.println("Your pet is death ");
+            } else {
+                System.out.println("Your pet is live");
+            }
         } else {
-            System.out.println("Your pet is live");
+
+            if (weight > 8) {
+                System.out.println("Your pet is death ");
+            } else {
+                System.out.println("Your pet is live");
+            }
         }
     }
+
 
     void feed() {
         weight++;
         System.out.println("thx for food bro, my weight is now " + weight);
-        if(weight>250) {
-            System.out.println("Your pet is live ");
+        if (species == "lion") {
+            if (weight > 184) {
+                System.out.println("Your pet is death ");
+            } else {
+                System.out.println("Your pet is live");
+            }
         } else {
-            System.out.println("Your pet is death");
+
+            if (weight > 25) {
+                System.out.println("Your pet is death ");
+            } else {
+                System.out.println("Your pet is live");
+            }
         }
     }
 }
